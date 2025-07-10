@@ -1,0 +1,44 @@
+
+.main{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+     padding-left: 30px; 
+     padding-right: 30px;
+}
+.firsthead{
+     font-family: Exo , sans-serif;
+     font-size: 4vw;
+     margin-top: 100px;
+}
+.firstp{
+    font-size: 2.2vw;
+}
+.hirebtn{
+    background-color:rgb(33, 37, 41) ;
+    border: 1px solid rgb(47, 180, 233);
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+    font-size: large;
+}
+
+.hirebtn:hover{
+    background-color: rgb(47, 180, 233) ;
+    transition: 0.8s;
+    color: black;
+}
+
+.clrblue{
+    color: rgb(47, 180, 233);
+     font-family: Exo , sans-serif;
+
+}
+.svg{
+    color: white;
+}
+.svg:hover{
+    color:rgb(47, 180, 233);
+    transition: 0.8s;
+}

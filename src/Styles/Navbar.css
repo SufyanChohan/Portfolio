@@ -1,0 +1,22 @@
+.myname{
+    font-family: Exo , sans-serif;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+.itemnav{
+    position: relative;
+  display: inline-block;
+
+padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Exo , sans-serif;
+}
+.itemnav:hover{
+   
+    text-decoration: underline;
+    text-decoration-color:rgb(47, 180, 233) ;
+}
+
