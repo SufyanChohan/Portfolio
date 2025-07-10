@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '../Styles/Navbar.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse " id="navbarNav">
           <div className='ms-auto d-flex gap-5 navbar-nav'>
-          <div className='itemnav'>Education</div>
+         <a href="#skillsec"> <div className='itemnav'>Education</div></a>
           <div className='itemnav'>Experience</div>
           <div className='itemnav'>Skills</div>
           <div className='itemnav'>Work</div>

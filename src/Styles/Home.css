@@ -42,3 +42,18 @@
     color:rgb(47, 180, 233);
     transition: 0.8s;
 }
+.skillshead{
+    font-family:Exo , sans-serif ;
+    font-size: 4vw;
+    color: rgb(47, 180, 233);
+}
+.skillbox{
+    padding: 15px 15px 0px 15px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+}
+.skillbox:hover{
+   transition: 0.5s;
+   transform: scale(1.1);
+}
