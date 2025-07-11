@@ -16,9 +16,9 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse " id="navbarNav">
           <div className='ms-auto d-flex gap-5 navbar-nav'>
-         <a href="#skillsec"> <div className='itemnav'>Education</div></a>
-          <div className='itemnav'>Experience</div>
-          <div className='itemnav'>Skills</div>
+         <div className='itemnav'>Education</div>
+          <a href="#expsec"><div className='itemnav'>Experience</div></a>
+          <a href="#skillsec"> <div className='itemnav'>Skills</div></a>
           <div className='itemnav'>Work</div>
           </div>
         </div>

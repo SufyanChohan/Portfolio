@@ -17,8 +17,8 @@
 }
 .hirebtn{
     background-color:rgb(33, 37, 41) ;
-    border: 1px solid rgb(47, 180, 233);
-    border-radius: 3px;
+    border: 2px solid rgb(47, 180, 233);
+    border-radius: 15px;
     padding: 8px;
     color: white;
     font-size: large;
@@ -42,7 +42,7 @@
     color:rgb(47, 180, 233);
     transition: 0.8s;
 }
-.skillshead{
+.heading{
     font-family:Exo , sans-serif ;
     font-size: 4vw;
     color: rgb(47, 180, 233);
@@ -56,4 +56,16 @@
 .skillbox:hover{
    transition: 0.5s;
    transform: scale(1.1);
+}
+.font{
+    font-family: Exo , sans-serif;
+}
+.bd{
+    border-bottom:2px solid rgb(47, 180, 233);
+    border-radius: 30px;
+}
+.myslogo{
+    /* background-color: white;
+    border-radius: 60px; */
+    width: 100px;
 }

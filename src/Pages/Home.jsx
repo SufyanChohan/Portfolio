@@ -13,7 +13,6 @@ import bootlogo from '../assets/bootstrap.png'
 import wordlogo from '../assets/wordpress.png'
 import shoplogo from '../assets/shopify.png'
 
-
 export default function Home() {
   return (
     <div>
@@ -41,11 +40,42 @@ export default function Home() {
         </div>
       </div>
       {/* hero section end */}
-      {/* Skills section Start */}
-      <div className='bg-dark text-light pt-5 ' id='skillsec' >
+      {/* experiences section start */}
+      <div className='bg-dark text-light ' id='expsec'>
+      <div className="container bd">
+        <div>
+        <h2 className="font text-center pt-5 heading">Experience</h2>
+        </div>
+        <div className='d-flex '>
+          <p className='font pt-5'>Nov-2023-Feb-2024</p>
+        </div>
+  
+          <div>
+        <h3 className="clrblue">Mystic Advertising</h3>
+        <p className='font'>Intern Web-Developer</p>
+        <p className='font'>As a Web Developer Intern at Mystic Advertising, I worked on WordPress and Shopify projects, gaining hands-on experience in customizing themes and building e-commerce websites. This internship helped me improve my practical skills and understand real-world web development workflows.</p>
+      </div>
+        </div>
+        {/* first expwrience end */}
+        {/* second experience start */}
+    <div className="container bd">
+        <div className='d-flex '>
+          <p className='font pt-5'>March-2023-Present</p>
+        </div>
+  
+          <div>
+        <h3 className="clrblue">Mystic Advertising</h3>
+        <p className='font'>Junior Web-Developer</p>
+        <p className='font'>As a Junior Web Developer at Mystic Advertising, I contributed to WordPress and Shopify projects, working on theme customization and e-commerce site development. This role further strengthened my practical skills and deepened my understanding of real-world web development.</p>
+      </div>
+        </div>
+        </div>
+        {/* second experience end */}
+  
+      {/* skills section Start */}
+      <div className='bg-dark text-light pt-5' id='skillsec' >
         <div className='container text-center'>
-          <h2 className='skillshead'>Skills</h2>
-        
+          <h2 className='heading'>Skills</h2>
         <div className=''>
           <div className='d-flex justify-content-center'>
           <div className='skillbox'><img width={"80px"} src={htmllogo} alt="" /><p>HTML</p></div>
@@ -62,8 +92,11 @@ export default function Home() {
         </div>
         </div>
       </div>
-    </div>
-  )
+      {/* Skills section end? */}
+
+      
+  </div>  
+ )
 }
 
 

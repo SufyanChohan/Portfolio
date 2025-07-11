@@ -7,3 +7,11 @@
 .font{
     font-family: Exo , sans-serif;
 }
+.phone >a {
+    text-decoration: none;
+    color: white;
+}
+.email >a {
+    text-decoration: none;
+    color: white;
+}
