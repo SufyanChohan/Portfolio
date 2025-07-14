@@ -1,3 +1,8 @@
+.navmain{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .myname{
     font-family: Exo , sans-serif;
     font-size: 1.5em;
@@ -18,5 +23,9 @@ padding: 10px;
    
     text-decoration: underline;
     text-decoration-color:rgb(47, 180, 233) ;
+}
+.borderb{
+    border-bottom:2px solid rgb(47, 180, 233);
+   
 }
 

@@ -1,44 +1,53 @@
 import React from "react";
-import "../Styles/timeline.css"; // Custom styles for the glowing effect
-import { div } from "framer-motion/client";
+import "../Styles/timeline.css"; 
+import { motion } from "framer-motion";
+
 const edu =[
-    {
+   {
+    title: "MATRICULATION",
+    institute: "The Eden Foundation School",
+    location: "Karachi, Pakistan",
+  },  
+  {
     title: "INTERMEDIATE",
     institute: "Government Degree Boys College",
     location: "Karachi, Pakistan",
     },
+    
 ]
 const education = [
 
-  {
-    title: "MATRICULATION",
-    institute: "Anjum Secondary School",
-    location: "Karachi, Pakistan",
-  },
+ 
   {
     title: "MERN Stack",
-    institute: "Expertizo University",
+    institute: "BMJ Digital Education",
     location: "Karachi, Pakistan",
   },
 ];
 
 export default function EducationTimeline() {
   return (
+    <div className="bg-dark">
     <div className="container py-5 bg-dark text-white">
-  <h2 className="text-center text-success fw-bold mb-5" style={{ fontSize: "2.5rem" }}>
-    Education <span className="text-white">/</span> Courses
+  <h2 className="text-center fw-bold mb-5 pt-5 heading" >
+    Education <span className="">/</span> Courses
   </h2>
 
   <div className="row position-relative timeline">
     {/* Left Side (Courses / edu) */}
     <div className="col-md-6 text-end pe-md-4">
       {edu.map((item, index) => (
-        <div key={index} className="mb-5 position-relative timeline-item-left">
+        <motion.div key={index} className="mb-5 position-relative timeline-item-left"
+        initial={{ x: -100, opacity: 0 }}  
+      whileInView={{ x: 0, opacity: 1 }}  
+      exit={{ x: -100, opacity: 0 }}     
+      transition={{ duration: 0.9 }}
+      viewport={{ once: false, amount: 0.2 }}>
           <div className="timeline-dot bg-success shadow"></div>
           <h5 className="fw-bold">{item.title}</h5>
           <p className="mb-0">{item.institute}</p>
           <p className="mb-0">{item.location}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
 
@@ -48,15 +57,21 @@ export default function EducationTimeline() {
     {/* Right Side (Education / education) */}
     <div className="col-md-6 ps-md-4">
       {education.map((item, index) => (
-        <div key={index} className="mb-5 position-relative timeline-item-right">
+        <motion.div key={index} className="mb-5 position-relative timeline-item-right mt-5"
+        initial={{ x: 100, opacity: 0 }}  
+      whileInView={{ x: 0, opacity: 1 }}  
+      exit={{ x: -100, opacity: 0 }}     
+      transition={{ duration: 0.9 }}
+      viewport={{ once: false, amount: 0.2 }}>
           <div className="timeline-dot bg-success shadow"></div>
           <h5 className="fw-bold">{item.title}</h5>
           <p className="mb-0">{item.institute}</p>
           <p className="mb-0">{item.location}</p>
-        </div>
+        </motion.div>
       ))}
     </div>
   </div>
+</div>
 </div>
   );
 }
