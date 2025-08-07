@@ -121,7 +121,7 @@ export default function Home() {
       <div className='bg-dark text-light pt-5' id='skillsec' >
         <div className='container text-center'>
           <h2 className='heading mb-5'>Skills</h2>
-       <div className='row '>
+       <div className='row gx-4 gy-4 justify-content-center'>
           {[
             {logo: htmllogo, label: 'HTML'},
             { logo: csslogo, label: 'CSS' },
@@ -133,7 +133,7 @@ export default function Home() {
         { logo: shoplogo, label: 'Shopify' },
           ].map((item, index) => (
             <div className='col-6 col-sm-4 col-md-3 '>
-              <div className="skillbox">
+              <div className="skillbox text-center">
                 <img src={item.logo} alt={item.label} className="img-fluid" style={{ maxWidth: '80px' }}/>
                 <p className='mt-2'>{item.label}</p>
               </div>
