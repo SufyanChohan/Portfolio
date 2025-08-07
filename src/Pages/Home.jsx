@@ -15,15 +15,17 @@ import shoplogo from '../assets/shopify.png'
 
 import { motion } from 'framer-motion'
 import EducationTimeline from '../Components/Education'
+import { map } from 'framer-motion/client'
 
 export default function Home() {
   return (
     <div>
+      {/* hero section Start */}
       <div>
-        <div className='bg-dark'>
+        <div className='bg-dark mainfirst'>
       <div className="main container ">
         
-        <div className='first col-12 col-md-6 mb-4 mb-md-0'><motion.h1 className='firsthead'
+        <div className='first left'><motion.h1 className='firsthead'
             initial={{ x: -100, opacity: 0 }}  
       whileInView={{ x: 0, opacity: 1 }}  
       exit={{ x: -100, opacity: 0 }}     
@@ -43,14 +45,14 @@ export default function Home() {
         <Whatsapplogo/>
         </div>
     <div className='pt-3'>
-      <a href="https://wa.me/923131071174" target='-blank'><button className='hirebtn'> Hire me</button></a>
+      <a href="https://wa.me/923131071174" target='_blank'><button className='hirebtn'> Hire me</button></a>
       </div>
-        </div>
-        <div className=' col-12 col-md-6 text-center'><img src={img} alt="" />
-        </div>
-       
 
         </div>
+        <div className='text-center right'>
+          <img src={img} alt="" />
+        </div>
+      </div>
       
         </div>
       </div>
@@ -118,22 +120,30 @@ export default function Home() {
       {/* skills section Start */}
       <div className='bg-dark text-light pt-5' id='skillsec' >
         <div className='container text-center'>
+          <h2 className='heading mb-5'>Skills</h2>
+       <div className='row '>
+          {[
+            {logo: htmllogo, label: 'HTML'},
+            { logo: csslogo, label: 'CSS' },
+        { logo: jslogo, label: 'JavaScript' },
+        { logo: reactlogo, label: 'React JS' },
+        { logo: nextlogo, label: 'Next JS' },
+        { logo: bootlogo, label: 'Bootstrap' },
+        { logo: wordlogo, label: 'WordPress' },
+        { logo: shoplogo, label: 'Shopify' },
+          ].map((item, index) => (
+            <div className='col-6 col-sm-4 col-md-3 '>
+              <div className="skillbox">
+                <img src={item.logo} alt={item.label} className="img-fluid" style={{ maxWidth: '80px' }}/>
+                <p className='mt-2'>{item.label}</p>
+              </div>
+            </div>
+            
+          ) 
+          )
           
-          <h2 className='heading'>Skills</h2>
-        <div className=''>
-          <div className='d-flex justify-content-center'>
-          <div className='skillbox'><img width={"80px"} src={htmllogo} alt="" /><p>HTML</p></div>
-          <div className='skillbox'><img width={"80px"} src={csslogo} alt="" /><p>CSS</p></div>
-          <div className='skillbox'><img width={"80px"} src={jslogo} alt="" /><p>JavaScript</p></div>
-          <div className='skillbox'><img width={"80px"} src={reactlogo} alt="" /><p>React JS</p></div>
-          </div>
-          <div className="d-flex justify-content-center">
-          <div className='skillbox'><img width={"80px"} src={nextlogo} alt="" /><p>Next JS</p></div>
-          <div className='skillbox'><img width={"90px"} src={bootlogo} alt="" /><p>Bootstrap</p></div>
-          <div className='skillbox'><img width={"80px"} src={wordlogo} alt="" /><p>Wordpress</p></div>
-          <div className='skillbox'><img width={"80px"} src={shoplogo} alt=""/><p>Shopify</p></div>
-          </div>
-        </div>
+          }
+       </div>
         </div>
       </div>
       {/* Skills section end? */}

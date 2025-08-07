@@ -43,7 +43,7 @@ export default function EducationTimeline() {
       exit={{ x: -100, opacity: 0 }}     
       transition={{ duration: 0.9 }}
       viewport={{ once: false, amount: 0.2 }}>
-          <div className="timeline-dot bg-success shadow"></div>
+          <div className="timeline-dot  shadow"></div>
           <h5 className="fw-bold">{item.title}</h5>
           <p className="mb-0">{item.institute}</p>
           <p className="mb-0">{item.location}</p>
@@ -63,7 +63,7 @@ export default function EducationTimeline() {
       exit={{ x: -100, opacity: 0 }}     
       transition={{ duration: 0.9 }}
       viewport={{ once: false, amount: 0.2 }}>
-          <div className="timeline-dot bg-success shadow"></div>
+          <div className="timeline-dot shadow"></div>
           <h5 className="fw-bold">{item.title}</h5>
           <p className="mb-0">{item.institute}</p>
           <p className="mb-0">{item.location}</p>
