@@ -121,7 +121,7 @@ export default function Home() {
       <div className='bg-dark text-light pt-5' id='skillsec' >
         <div className='container text-center'>
           <h2 className='heading mb-5'>Skills</h2>
-       <div className='row gx-4 gy-4 justify-content-center'>
+       <div className='row gx-4 gy-4 justify-content-center' >
           {[
             {logo: htmllogo, label: 'HTML'},
             { logo: csslogo, label: 'CSS' },
