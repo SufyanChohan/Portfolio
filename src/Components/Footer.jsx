@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/Footer.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Github from './Github'
 import Linkedinlogo from './Linkedinlogo'
 import Whatsapplogo from './Whatsapplogo'
