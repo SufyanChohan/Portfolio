@@ -100,7 +100,7 @@ export default function Home() {
       exit={{ x: -100, opacity: 0 }}     
       transition={{ duration: 0.9 }}
       viewport={{ once: false, amount: 0.2 }}
-      >March-2023-Present</motion.p>
+      >March-2024-Present</motion.p>
         </div>
   
           <motion.div
