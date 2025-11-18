@@ -11,8 +11,8 @@ export default function Footer() {
   const navigate = useNavigate()
   return (
     <div>
-      <div className='bg-dark text-light pt-5 pb-4'>
-        <div className='container d-flex justify-content-between'>
+      <div className='bg-dark text-light pt-5 pb-4 '>
+        <div className='container d-flex justify-content-between brd'>
         <div className='w-25'> <h1 onClick={()=>navigate("/")} className='myname'>Sufyan Chohan</h1>
         <p className='text-light'>I'm a web developer focused on building clean, modern, and user-friendly websites. I turn ideas into responsive, engaging experiences using HTML, CSS, JavaScript, and modern frameworks.</p>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Whatsapplogo() {
   return (
-    <div>
+    <div >
       <a
       href="https://wa.me/923131071174"
       target="_blank"

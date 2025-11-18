@@ -20,7 +20,7 @@ import { map } from 'framer-motion/client'
 export default function Home() {
   return (
     <div>
-      {/* hero section Start */}
+      {/* hero section start */}
       <div>
         <div className='bg-dark mainfirst'>
       <div className="main container ">
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
       </div>
       {/* Skills section end? */}
-     
+
   </div>  
  )
 }

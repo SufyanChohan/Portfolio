@@ -39,3 +39,7 @@
         font-size: 1em;
     }
 }
+.brd{
+    border-top: 1px solid gray;
+    padding-top : 20px;
+}
