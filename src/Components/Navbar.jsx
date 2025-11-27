@@ -19,7 +19,6 @@ export default function Navbar() {
           <a href="#education"><div className='itemnav'>Education</div></a>
           <a href="#expsec"><div className='itemnav'>Experience</div></a>
           <a href="#skillsec"> <div className='itemnav'>Skills</div></a>
-          {/* <div className='itemnav'>Work</div> */}
           </div>
         </div>
       </div>
