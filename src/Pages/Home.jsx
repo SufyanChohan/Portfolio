@@ -61,10 +61,10 @@ export default function Home() {
        <div id='education'>
       <EducationTimeline/>
       </div>
-      {/* education cpmponent end */}
+      {/* education component end */}
       {/* experiences section start */}
       <div className='bg-dark text-light ' id='expsec'>
-      <div className="container bd">
+      {/* <div className="container bd">
         <div>
         <h2 className="font text-center pt-5 heading">Experience</h2>
         </div>
@@ -89,9 +89,8 @@ export default function Home() {
         <p className='font'>Intern Web-Developer</p>
         <p className='font'>As a Web Developer Intern at Mystic Advertising, I worked on WordPress and Shopify projects, gaining hands-on experience in customizing themes and building e-commerce websites. This internship helped me improve my practical skills and understand real-world web development workflows.</p>
       </motion.div>
-        </div>
-        {/* first experience end */}
-        {/* second experience start */}
+        </div> */}
+
     <div className="container bd">
         <div className='d-flex '>
           <motion.p className='font pt-5'
@@ -100,7 +99,7 @@ export default function Home() {
       exit={{ x: -100, opacity: 0 }}     
       transition={{ duration: 0.9 }}
       viewport={{ once: false, amount: 0.2 }}
-      >March-2024-Present</motion.p>
+      >March-2025-Present</motion.p>
         </div>
   
           <motion.div
@@ -110,12 +109,12 @@ export default function Home() {
       transition={{ duration: 0.9 }}
       viewport={{ once: false, amount: 0.2 }}>
         <h3 className="clrblue">Mystic Advertising</h3>
-        <p className='font'>Junior Web-Developer</p>
-        <p className='font'>As a Junior Web Developer at Mystic Advertising, I contributed to WordPress and Shopify projects, working on theme customization and e-commerce site development. This role further strengthened my practical skills and deepened my understanding of real-world web development.</p>
+        <p className='font'>Frontend Developer</p>
+        <p className='font'>As a Frontend Developer at Mystic Advertising, I contributed to React and Next.js projects, working on UI customization development. This role further strengthened my practical skills and deepened my understanding of real-world frontend development.</p>
       </motion.div>
         </div>
         </div>
-        {/* second experience end */}
+        {/*experience end */}
   
       {/* skills section Start */}
       <div className='bg-dark text-light pt-5' id='skillsec' >
